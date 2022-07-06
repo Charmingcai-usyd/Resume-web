@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<!-- copyright: 蔡宗珉 一切版权由蔡宗珉所有 -->
+{% load static %}
+{% load staticfiles %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href=" static/css/style.css ">  <!-- css file in the static/css/style.css -->
+
+    <style>
+            h5{text-transform: None;}
+            h4{text-transform: None;}
+            h3{text-transform: None;}
+            h2{text-transform: None;}
+            h1{text-transform: None;}
+            p{text-transform: None;}
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="profile">
+        <img src="static/pic.png" alt="">        <!-- my face pic -->
+        <h3>Charming Cai</h3>                   <!-- my name -->
+        <p>Electrical & Computer engineer</p>    <!-- my def -->
+        <div class="share">                     <!-- contact icon-->
+            <p>
+                <a href="https://www.facebook.com/profile.php?id=100081274508718" class="fab fa-facebook-f"></a>
+                <!-- fb ok -->
+                <a href="https://line.me/ti/p/pJETfbBIMg" class="fab fa-line"></a> <!-- line ok -->
+                <a href="/weixin" class="fab fa-weixin"></a>
+            </p>
+            <a href="https://www.instagram.com/charmingcai9/" class="fab fa-instagram"></a>  <!-- ins ok -->
+            <a href="/LinkedIn" class="fab fa-linkedin"></a> <!-- link ok -->
+            <a href="https://www.youtube.com/channel/UC8-B4Lkx0oUzU2lOs9HLRdQ" class="fab fa-youtube"></a>
+            <!-- youtube ok -->
+            <a href="https://github.com/Charming-usyd" class="fab fa-git"></a>    <!-- github ok -->
+        </div>
+        <div class="buttons">
+            <a class="btn" href="static/files/cv.pdf" download="cv.pdf"> Download cv</a>
+            <a class="btn" href="/comment" rel="external nofollow"> Comment </a>
+            <a class="btn" href="/project" rel="external nofollow"> My project </a>
+            <a class="btn" href="/award" rel="external nofollow"> My Award </a>
+        </div>
+    </div>
+
+
+    <div class="information">
+        <div class="about">
+            <h3 class="title">About me</h3>
+            <p>
+                Hello! Welcome to my homepage :)
+            </p>
+            <p>
+                I come from China as student with a love for geeky technology.
+                While, at university, I am very passionate with using engineering techniques to complete projects and
+                use them to participate in competitions
+            </p>
+            <p> In my homepage, I will introduce my profile using text and video.
+                I hope you like my design much more, thank you!
+            </p>
+            <div class="box-container">
+                <div class="box">     <!-- my profile -->
+                    <h3><span> Age : </span> 23 </h3>
+                    <h3><span> Address : </span> Sydney, AUS & ShenZhen CN </h3>
+                    <h3><span> Number : </span> +86 158-7112-1977 </h3>
+                    <h3><span> Email : </span> joplinkidds@gmail.com </h3>
+                    <h3><span> Language : </span> English, Chinese </h3>
+                </div>
+                <div class="box">
+                    <h3><span> Skill : </span> Web design & PCB design</h3>
+                    <H3> ARM M3, A7 embedded systems design </H3>
+                    <H3> Solidworks (3D modeling) </H3>
+                    <h3><span> Experience : </span> almost half a year </h3>
+                    <h3><span> Freelance : </span> No </h3> <!-- Available -->
+                </div>
+            </div>
+        </div>
+
+        <div class="services">
+            <h3 class="title">My services</h3>
+            <div class="box-container">
+                <div class="box">
+                    <img src="static/icon-1.png" alt="">  <!-- Html -->
+                    <h3>HTML 5</h3>  <!-- name -->
+                </div>
+                <div class="box">
+                    <img src="static/icon-2.png" alt="">  <!-- CSS -->
+                    <h3>CSS 3</h3>  <!-- name -->
+                </div>
+                <div class="box">
+                    <img src="static/icon-3.png" alt="">  <!-- JS -->
+                    <h3>JavaScript</h3>  <!-- name -->
+                </div>
+                <div class="box">
+                    <img src="static/C.png" alt="">  <!-- C -->
+                    <h3>C</h3>  <!-- name -->
+                </div>
+                <div class="box">
+                    <img src="static/Python.png" alt="">  <!-- Python -->
+                    <h3>Python</h3>  <!-- name -->
+                </div>
+            </div>
+        </div>
+        <div class="services">
+            <div class="box-container">
+                <div class="box">
+                    <img src="static/sw.png" alt="">  <!-- Solidworks -->
+                    <h3>Solidworks</h3>  <!-- name -->
+                </div>
+                <div class="box">
+                    <img src="static/st.png" alt="">  <!-- St -->
+                    <h3>ARM Cortex-M3 </h3>  <!-- name -->
+                </div>
+                <div class="box">
+                    <img src="static/cortxA.png" alt="">  <!-- cortx-A -->
+                    <h3>ARM Cortex-A7 </h3>  <!-- name -->
+                </div>
+                <div class="box">
+                    <img src="static/linux.png" alt="">  <!-- linux -->
+                    <h3>Linux</h3>  <!-- name -->
+                </div>
+            </div>
+        </div>
+
+
+        <div class="skills">
+            <h3 class="title">My skills</h3>
+            <div class="box-container">
+                <div class="box">
+                    <div class="progress">
+                        <h3>C <span>95%</span></h3>
+                        <div class="bar"><span></span></div>
+                    </div>
+                    <div class="progress">
+                        <h3>Python <span>80%</span></h3>
+                        <div class="bar"><span></span></div>
+                    </div>
+                    <div class="progress">
+                        <h3>css <span>70%</span></h3>
+                        <div class="bar"><span></span></div>
+                    </div>
+                    <div class="progress">
+                        <h3>Html <span>75%</span></h3>
+                        <div class="bar"><span></span></div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="progress">
+                        <h3>Embedded System Drivers<span>90%</span></h3>
+                        <div class="bar"><span></span></div>
+                    </div>
+                    <div class="progress">
+                        <h3>PCB design (AD)<span>80%</span></h3>
+                        <div class="bar"><span></span></div>
+                    </div>
+                    <div class="progress">
+                        <h3>Web design<span>65%</span></h3>
+                        <div class="bar"><span></span></div>
+                    </div>
+                    <div class="progress">
+                        <h3>Control system design <span>70%</span></h3>
+                        <div class="bar"><span></span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="experience">
+            <h3 class="title">My Education</h3>         <!-- 教育经历 -->
+            <div class="box-container">
+                <div class="box">
+                    <span>2017 - 2021</span>
+                    <h4>Hubei University of automobile technology</h4>
+                    <p> Major: Automation Bachelor degree.</p>
+                    <p> GPA: 3.5/5.0 Ranking: 1/94 (1%).</p>
+                    <p> Excellent graduates</p>
+                    <p> Excellent Graduation final Design award</p>
+                </div>
+                <div class="box">
+                    <span>2022 - Nowadays</span>
+                    <h3>University of Sydney</h3>
+                    <p> Major: Electrical Engineering Master degree. </p>
+                    <p> GPA: None Ranking: None (?%).</p>
+                    <p> None </p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="experience">
+            <h3 class="title">Work Experience</h3>   <!-- 工作经历 -->
+            <div class="box-container">
+                <div class="box">
+                    <span>2020.1 - 2020.2</span>
+                    <h3>Assistant Testing and debug Engineer</h3>
+                    <h5>Shenzhen Hangsheng Electronics Co., Ltd.</h5>
+                    <p>Participated in testing the Android system for Hyundai's Central Control Platform,
+                        with the main functions focusing on software,
+                        radio, voice recognition dialogue and navigation.</p>
+                </div>
+                <div class="box">
+                    <span>2020.6 - 2020.9</span>
+                    <h3>Assistant Hardware Development Engineer</h3>
+                    <h5>Shenzhen Hangsheng Electronics Co., Ltd.</h5>
+                    <p>Participated in the hardware development of the Android board for the Dongfeng Xiaokang vehicle
+                        system, and participated in the EMC protection test of the product. During the work, learning
+                        the PADS six-layer circuit board design and learning the layout design of 4 pieces of DDR4.</p>
+                </div>
+                <div class="box">
+                    <span>2022.6 - 2022.1</span>
+                    <h3>Hardware Development Engineer</h3>
+                    <h5>Shenzhen Zhenshun Technology Co., Ltd.</h5>
+                    <p>
+                        Participated in the development of the company's hardware, including the design of the hardware
+                        control board for the handheld thermometer, the body recognition thermometer and the face
+                        recognition flow thermometry system. In addition to this, I am also responsible for part of the
+                        driver development for the CortexA serious of chips.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="experience">
+            <h3 class="title">Project Experience</h3>    <!-- 项目经历 -->
+            <div class="box-container">
+                <div class="box">
+                    <span>2020.3 - 2021.6</span><!-- 百叶窗与逆变器装置-->
+                    <a href="/more_project#window_loc">
+                    <h3>Smart solar shutters & Inverters</h3> </a>
+                    <p>The device collects light from outside the window and converts it to conserve energy. It also
+                        enables intelligent control of indoor temperature and humidity by using sensors, and the user
+                        can control the angle of the blades by gestures and via the internet to achieve both the goals
+                        of indoor light management and energy conservation.</p>
+                </div>
+                <div class="box">
+                    <span>2020.11 - 2021.4</span>
+                    <a href="/project#robot_loc">
+                    <h3>Material handling robots</h3> </a> <!-- 搬运机器人 -->
+                    <p>This project took part in the National Engineering Training Challenge in 2021. Two provincial
+                        awards and one national award were achieved. Robot vehicle automates handling work via computer
+                        vision technology and spatial orientation capabilities</p>
+                </div>
+                <div class="box">
+                    <span>2021.5 - 2021.6</span>
+                    <a href="/project#vehicle_loc">
+                    <h3>IoT Thermal Drive Vehicle</h3> </a><!-- 热能小车 -->
+                    <p>The Stirling engine is used to drive the entire vehicle and the system uses part of the energy as
+                        battery power to support the vehicle's electronic control unit. The user can control the
+                        direction of the vehicle with his mobile phone via IoT technology.</p>
+                </div>
+                <div class="box">
+                    <span>2021.3 - 2022.6</span>
+                    <a href="/project#3D_loc">
+                    <h3>3D printer based on IOT</h3> </a><!-- IOT 3D打印机 -->
+                    <p>Designed an detection solution for a 3D printer data monitoring and supervising system with Linux
+                        as the operating system, which involves streaming media development technology, computer vision
+                        technology and IoT technology. It is worth mentioning that this is my undergraduate project and
+                        I have done the whole project by myself.</p>
+                </div>
+                <div class="box">
+                    <span>2022.3 - 2022.6</span>
+                    <h3>Personal website for CV presentation</h3>  <!-- 个人主页开发 -->
+                    <p>As you can see, this is my first personal website project, and although it is not very mature, I
+                        hope you enjoy it. This project uses HTML, CSS as the Client side and django in Python as the
+                        Server side.</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="experience">
+            <h3 class="title"> Research Experience</h3>    <!-- 研究经历 -->
+            <div class="box-container">
+                <div class="box">
+                    <span>2020.1 - 2020.7</span>
+                    <a href="/project#PMSM_loc"> <!-- 嵌入PMSM 超链接-->
+                        <h3>PMSM current predictive control based on disturbance torque observer</h3> </a>
+                    <!-- 基于干扰转矩观测器的PMSM电流预测控制 -->
+                    <h5>Second Author </h5>
+                    <h5>Published in 2021 China Automation Congress (CAC)</h5>
+                    <br>
+                    <p>Permanent magnet synchronous motor (PMSM) is easy to be affected by torque ripple and dead time
+                        of inverter, in order to solve this problem, this paper replaces the traditional PI control with
+                        current predictive control. At the same time, a disturbance torque observer is introduced to
+                        estimate the voltage error caused by the disturbance torque of the motor model in real time.
+                        Finally, through MATLAB / Simulink and experiments, it is verified that the new system suppress
+                        external interference and improve the control performance of the motor.</p>
+                    <br>
+                    <a class="btn" href="https://ieeexplore.ieee.org/abstract/document/9727669"> Go to IEEE Xplore </a>
+                    <a class="btn"
+                       href="https://scholar.google.com.hk/scholar?hl=zh-CN&as_sdt=0%2C5&q=PMSM+current+predictive+control+based+on+disturbance+torque+observer&btnG=">
+                        Go to Google Scholar </a>
+                    <!-- 超链接 -->
+                </div>
+            </div>
+        </div>
+
+        <div class="contact">
+            <h3 class="title">Contact Info</h3>
+            <div class="box-container">
+                <div class="box">
+                    <i class="fas fa-map"></i>
+                    <div class="info">
+                        <h3>My Address</h3>
+                        <p>shenzhen, china - 518064</p>
+                        <p>sydney, australia - None</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <i class="fas fa-phone"></i>
+                    <div class="info">
+                        <h3>My Number</h3>
+                        <p>+86-158-7112-1977</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <i class="fas fa-envelope"></i>
+                    <div class="info">
+                        <h3>My Email</h3>
+                        <p>joplinkidds@gmail.com</p>
+                        <p>caizongmm0502@163.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br><h5 align="center"> Copyright © 2020 - 2022 Shenzhen Zhenshun Technology Ltd. All Rights Reserved. </h5>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+
+{% load static %}
+{% load staticfiles %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href=" static/css/style.css ">
+
+    <!-- custom js file link -->
+    <script type="text/javascript" src="/static/js/pic_project.js"></script>
+
+    <style>
+        .img-obj
+        {
+        width: 100%; height: auto;max-width: 100%; display: block;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<div class="container">
+    <div class="profile">
+        <img src="static/pic.png" alt="">       <!-- my face pic -->
+        <h3>Charming Cai</h3>                   <!-- my name -->
+        <p>Electrical & Computer engineer</p>   <!-- my def -->
+        <div class="share">                     <!-- contact icon-->
+            <p>
+                <a href="https://www.facebook.com/profile.php?id=100081274508718" class="fab fa-facebook-f"></a>
+                <!-- fb ok -->
+                <a href="https://line.me/ti/p/pJETfbBIMg" class="fab fa-line"></a> <!-- line ok -->
+                <a href="/weixin" class="fab fa-weixin"></a>
+            </p>
+            <a href="https://www.instagram.com/charmingcai9/" class="fab fa-instagram"></a>  <!-- ins ok -->
+            <a href="/LinkedIn" class="fab fa-linkedin"></a> <!-- link ok -->
+            <a href="https://www.youtube.com/channel/UC8-B4Lkx0oUzU2lOs9HLRdQ" class="fab fa-youtube"></a>
+            <!-- youtube ok -->
+            <a href="https://github.com/Charming-usyd" class="fab fa-git"></a>    <!-- github ok -->
+        </div>
+        <div class="buttons">
+            <a class="btn" href="static/files/cv.pdf" download="cv.pdf"> Download cv</a>
+            <a class="btn" href="/comment" rel="external nofollow"> Comment </a>
+            <a class="btn" href="/" rel="external nofollow"> My Resume </a>
+            <a class="btn" href="/award" rel="external nofollow"> My Award </a>
+        </div>
+    </div>
+
+
+    <div class="information">
+
+        <div class="about">
+            <h1 align="center" >My Projects</h1>
+            <br>
+            <a id="3D_loc" name="3D_loc">
+            <h5 class="title">3D printer based on IoT</h5> </a>
+            <div class="experience">
+                <div class="box-container">
+                    <div class="box">
+                        <h3> <span> Project duration : </span> about 3 months </h3>
+                        <h3> <span> Background : </span> Graduation design project  </h3>
+                        <h3> <span> Achievement :  </span>
+                            <li> Excellent graduation project in Uni </li>
+                            <li> Utility model patent certificate </li>
+                            <li> Participate in the selection of Excellent graduation project in Hubei Province </li>
+                        </h3>
+                    </div>
+                </div>
+            </div>
+            <p>This project attempts to design a 3D printer data monitoring and surveillance system using Linux as the
+                operating system, attempting to solve many of the process control problems that occur with closed-loop
+                control systems for 3D printers: step losses in stepper motors, plugged nozzles ect. It also overcomes
+                the problems of traditional analogue CCTV monitoring systems with short transmission distances,
+                inability to network and large storage media. By designing a networked monitoring system, users can
+                access the data monitoring platform from any Internet port after accessing Ethernet at the site. The
+                platform automatically completes image identification and data processing and analysis, and provides
+                alarm functions at the same time.</p>
+            <p></p>
+
+        </div>
+
+        <div class="experience">
+            <div class="box-container">
+                <div class="box">
+                    <span><h2>IoT technology</h2></span>
+                    <h3>Monitoring and uploading the data</h3>
+                    <h2>
+                        <p> The phone can see many aspects of the printer's data.</p>
+                        <p> The phone can send any command to the 3D printer.</p>
+                        <p> Some Data such as nozzle temperature can be saved in the cloud </p>
+                        <p> The user's phone needs to have the application installed and have internet access.</p>
+                    </h2>
+                </div>
+                <div class="box">
+                    <span><h2>Streaming media technology</h2></span>
+                    <h3> Getting Live Video Resources in real time</h3>
+                    <h2>
+                        <p> Intranet piercing technology to map LANs to the Internet. </p>
+                        <p> Computer vision monitoring of nozzle working status. </p>
+                        <p> Computer vision enables automatic identification of printing parts. </p>
+                        <p> Automatic alarm for printing errors. </p>
+                    </h2>
+                </div>
+            </div>
+        </div>
+        <h3>Video</h3>
+        <br>
+        <!-- 嵌入打印机油管介绍视频 加入自适应-->
+        <div style="position: relative; padding: 30% 45%;">
+            <iframe style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;"
+                    src="https://www.youtube.com/embed/CbZYZivnFjA"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+
+        </div>
+        <br> <br>
+        <!-- 嵌入打印机B站介绍视频 加入自适应-->
+        <div style="position: relative; padding: 30% 45%;">
+            <iframe
+                    style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;"
+                    src="https://player.bilibili.com/player.html?aid=213080178&bvid=BV1oa411i7w7&cid=573965927&page=1&high_quality=1"
+                    scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true">
+            </iframe>
+        </div>
+        <br> <br>
+
+
+        <h3>Pictures</h3>  <br>
+        <!-- 嵌入打印机介绍图片 测试与工程文件-->
+        <p id="info"></p>
+        <img class="img-obj" src="static/pro1/0.png" alt="" style="width: 560px;height: 315px">
+        <br>
+        <!-- 嵌入打印机介绍图片 手机页面图片 -->
+        <img class="img-obj" src="static/pro1/0.png" alt="" style="width: 310px;height: 620px">
+        <br>
+        <div class="buttons"><!-- 超链接 定位 3D打印机监控系统 锚点1 -->
+            <a class="btn" href="/award#3D_loc"><h3>Patent Certificate</h3></a>
+        </div>
+        <br> <br>
+
+        <div class="about">
+            <a id="robot_loc" name="robot_loc">
+                <h5 class="title">Material handing robots</h5> </a>
+            <div class="experience">
+                <div class="box-container">
+                    <div class="box">
+                        <h3> <span> Project duration : </span> about 5 months </h3>
+                        <h3> <span> Background : </span> Competition of Engineering  </h3>
+                        <h3> <span> Achievement :  </span>
+                            <li>"Challenge Cup" National College Student Curricular Academic Science and Technology
+                                Works
+                                Competition (Third Prize).
+                            </li>
+                            <li>National Undergraduate Engineering Training Integration Ability Competition (Provincial
+                                awards)
+                            </li>
+                        </h3>
+                    </div>
+                    <p>Intelligent logistics handling robots allow for autonomous identification and fixed-point
+                        placement.
+                        Because the entire process does not require human control, it saves a large amount of human
+                        resources.</p>
+                    <p>Robot SLAM positioning technology and computer vision technology are used. Advanced
+                        multi-sensor
+                        integration design and rational and mature layout of product modules.</p>
+
+                    <div class="experience">
+                        <div class="box-container">
+                            <div class="box">
+                                <span><h2>SLAM positioning technology</h2></span>
+                                <h3>SLAM is a good method localize your vehicle in that map</h3>
+                            <h2>
+                                <p> Grayscale and laser sensors enable independent positioning</p>
+                                <p> High speed and accuracy with high robustness against interference</p>
+                                <p> Multi-sensor fusion makes the systems work in harmony and stability </p>
+                                <p> Low cost and easy to install.</p>
+                            </h2>
+                        </div>
+                        <div class="box">
+                            <span><h2> Computer vision for object identification.</h2></span>
+                            <h3> Colour and feature identification and QR code identification. </h3>
+                            <h2>
+                                <p> Vehicle collecting missions and planning maps for routes. </p>
+                                <p> Rapid response processing of images by edge computing devices.</p>
+                                <p> Less influenced by surrounding ambient light. </p>
+                                <p> Can identify the morphological characteristics of the target object and
+                                    capture them in a suitable way </p>
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <h3>Video</h3>
+        <br>
+        <!-- 搬运机器人油管介绍视频 -->
+        <div style="position: relative; padding: 30% 45%;">
+            <iframe style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;"
+                    src="https://www.youtube.com/embed/23RRHkQfsCA"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+        </div>
+        <br> <br>
+
+        <!-- 搬运机器人B站介绍视频 加入自适应-->
+        <div style="position: relative; padding: 30% 45%;">
+            <iframe
+                    style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;"
+                    src="https://player.bilibili.com/player.html?aid=341545478&bvid=BV1PR4y1P71N&cid=719779000&page=1&high_quality=1"
+                    scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+        </div>
+        <br> <br>
+        <h3>Pictures</h3>  <br>
+        <!-- 搬运机器人介绍图片 -->
+        <img class="img-obj" src="static/pro1/0.png" alt="" style="width: 460px;height: 315px">
+        <br>
+        <div class="buttons"><!-- 超链接 定位 搬运机器人 锚点1 -->
+            <a class="btn" href="/award#Robot_loc"><h3>Award Certificate</h3></a>
+        </div>
+
+        <br> <br>
+
+        <div class="about">
+            <a id="vehicle_loc" name="vehicle_loc">
+                <h5 class="title">IoT Thermal Drive Vehicle</h5></a>
+            <div class="experience">
+                <div class="box-container">
+                    <div class="box">
+                        <h3><span> Project duration : </span> about 1 months </h3>
+                        <h3><span> Background : </span> Competition of Engineering  </h3>
+                        <h3><span> Achievement : </span>
+                            <li>National 1st Prize in 3D Power Competition in 2021</li>
+                            <li>National 2st Prize in 3D Power Competition in 2022</li>
+                        </h3>
+                    </div>
+                    <p>The project has simple structure. This IoT platform is based on Blinker, which is a very
+                        convenient and mature platform for many develpors. The Stirling engine drives an electric
+                        motor
+                        that can charge a two thousand millilitre lithium battery, so you don't have to worry about
+                        a
+                        lack of power.</p>
+                    <p>A Stirling engine is a heat engine that is operated by the cyclic compression and expansion
+                        of
+                        air or other gas (the working fluid) between different temperatures, resulting in a net
+                        conversion of heat energy to mechanical work.</p>
+
+
+                    <div class="experience">
+                        <div class="box-container">
+                            <div class="box">
+                                <span><h2>IoT technology</h2></span>
+                                <h3>IoT platform: Blinker and mobile phones</h3>
+                                <h2>
+                                    <p> The vehicle can respond to commands from the mobile phone in a timely way.</p>
+                                    <p> The data includes motor rotation angle and rotation speed </p>
+                                </h2>
+                            </div>
+                            <div class="box">
+                                <span><h2> Lithium battery charging and discharging technology </h2></span>
+                                <h3> Collecting and releasing kinetic energy </h3>
+                                <h2>
+                                    <p> The generator voltage level must be in the range of the charge/discharge circuit
+                                        rating </p>
+                                    <p> System has to endure double the rated transient voltage</p>
+                                    <p> Output voltage needs to be stable at 5 volts (±1%) </p>
+                                    <p> Designed circuit over-current and breakdown protection </p>
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h3>Video</h3>
+        <br>
+        <!-- 嵌入油管热能小车介绍视频 加入自适应-->
+        <div style="position: relative; padding: 30% 45%;">
+            <iframe style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;"
+                    src="https://www.youtube.com/embed/C3Ku2KsLLWE" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+        </div>
+        <br> <br>
+
+        <!-- 嵌入热能小车B站介绍视频 加入自适应-->
+        <div style="position: relative; padding: 30% 45%;">
+            <iframe
+                    style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;"
+                    src="https://player.bilibili.com/player.html?aid=595871363&bvid=BV1pB4y127CP&cid=578262722&page=1&high_quality=1"
+                    scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+        </div>
+        <br> <br>
+
+        <h3>Pictures</h3>  <br>
+        <!-- 热能小车介绍图片 -->
+        <img class="img-obj" src="static/pro1/0.png" alt="" style="width: 460px;height: 315px">
+        <br>
+        <div class="buttons">
+            <a class="btn" href="/award#vehicle_loc_award"> <h3>Award Certificate</h3> </a>
+        </div>
+        <br> <br>
+
+        <div class="about">
+            <a id="PMSM_loc" name="PMSM_loc">
+                <h5 class="title">PMSM current predictive control based on disturbance torque observer</h5> </a>
+            <div class="experience">
+                <div class="box-container">
+                    <div class="box">
+
+                        <h3><span> Project duration : </span> about half a year </h3>
+                        <h3><span> Background : </span> Research topics </h3>
+                        <h3><span> Achievement :</span>
+                            <li>Published in 2021 China Automation Congress (CAC) which is the top 3
+                                conferences in China's control fields</li>
+                            <li> IEEE published in 14 March 2022</li>
+                        </h3>
+                    </div>
+                    <p>Permanent magnet synchronous motor (PMSM) is easy to be affected by torque ripple and dead time
+                        of inverter when it runs at medium and low speed, resulting in poor control characteristics of
+                        PMSM. In order to solve this problem, this paper takes PMSM in medium and low speed as the
+                        research object, and replaces the traditional PI control with current predictive control. At the
+                        same time, a disturbance torque observer is introduced to estimate the voltage error caused by
+                        the disturbance torque of the motor model in real time, and feedback to the input terminal to
+                        counteract the impact of the disturbance on the motor. Finally, through MATLAB / Simulink and
+                        experiments, it is verified that the proposed scheme can effectively improve the dynamic
+                        characteristics of the motor, suppress external interference and improve the control performance
+                        of the motor.</p>
+
+                    <div class="experience">
+                        <div class="box-container">
+                            <div class="box">
+                                <span><h2>Construction of a PMSM model</h2></span>
+                                <h3>Simulation with matlab/simulink software</h3>
+                                <h2>
+                                    <p> Constructing PMSM mathematical model.</p>
+                                    <p> Analysing current predictive control.</p>
+                                    <p> Adding PMSM disturbance torque disturbance observer.</p>
+                                    <p> Simulation Analysis of new module.</p>
+                                </h2>
+                            </div>
+                            <div class="box">
+                                <span><h2>Laboratory tests on PMSM control strategies</h2></span>
+                                <h3>Build real circuits to test performance</h3>
+                                <h2>
+                                    <p> Actual waves are the same as the simulation waves. </p>
+                                    <p> Better performance than traditional PI control strategies.</p>
+                                    <p> The paper's conclusions are correct and can be reproduced in the real world.</p>
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h3>Pictures from Laboratory</h3>  <br>
+            <!-- 无刷直流电机介绍图片 -->
+            <img class="img-obj" src="static/pro1/0.png" alt="" style="width: 560px;height: 315px">
+            <br> <br>
+            <h3>Pictures from Conference paper</h3>  <br>
+            <img class="img-obj" src="static/pro1/0.png" alt="" style="width: 560px;height: 315px">
+        </div>
+        <br> <br>
+        <div class="buttons" align="center" >
+            <a class="btn" href="/more_project"> <h2>More Project</h2> </a>
+        </div>
+        <br> <br>
+
+        <div class="contact">
+            <h3 class="title">Contact Info</h3>
+            <div class="box-container">
+                <div class="box">
+                    <i class="fas fa-map"></i>
+                    <div class="info">
+                        <h3>My Address</h3>
+                        <p>shenzhen, china - 518064</p>
+                        <p>sydney, australia - None</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <i class="fas fa-phone"></i>
+                    <div class="info">
+                        <h3>My Number</h3>
+                        <p>+86-158-7112-1977</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <i class="fas fa-envelope"></i>
+                    <div class="info">
+                        <h3>My Email</h3>
+                        <p>joplinkidds@gmail.com</p>
+                        <p>caizongmm0502@163.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br><h5 align="center"> Copyright © 2020 - 2022 Shenzhen Zhenshun Technology Ltd. All Rights
+        Reserved. </h5>
+    </div>
+
+
+</div>
+</body>
+</html>

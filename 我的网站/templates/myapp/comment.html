@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<!-- copyright: 蔡宗珉 一切版权由蔡宗珉所有 -->
+{% load static %}
+{% load staticfiles %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- main_page link  -->
+    <link rel="stylesheet" href=" static/css/style.css ">
+    <!-- css file in the static/css/style.css -->
+    <link rel="stylesheet" href=" static/css/style_bob.css ">
+
+    <style>
+            h5{text-transform: None;}
+            h4{text-transform: None;}
+            h3{text-transform: None;}
+            h2{text-transform: None;}
+            h1{text-transform: None;}
+            p{text-transform: None;}
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="information">        <!-- add format  -->
+        <div class="experience">
+            <div class="box-container">
+                <div class="box">
+                    <h4 class="title" align="center"> Notice </h4>
+                    <h3>
+                        You can discuss in the board!
+                        If you have any advises or suggestions, please tell me as soon as possible!
+                        The board will show your username and submit time.
+                    </h3>
+                    <h4>你可以在留言板上留言! 如果你有任何意见或建议，请尽快告诉我! 留言板上会显示你的用户名和提交时间。</h4>
+                    <br>
+                    <h2 align="center"> Please make sure that your COMMENT appropriately.</h2>
+                    <h3 align="center"> 请在网上发表合适评论 .</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="experience">
+            <h5 class="title" align="center"> Discussion Board </h5> <br> <!-- table title -->
+            <table align="center" bgcolor="#E8E8E8">    <!-- board information table  -->
+                {% if messages %}                       <!-- 循环输出信息  -->
+                {% for message in messages %}
+                <div class="comment">                   <!-- bob format 评论气泡模板-->
+                    <span class="bot"></span>
+                    <span class="top"></span>
+                    <font color="black">
+                        <h2>{{ message.username }}</h2> <!-- username -->
+                        <h5>{{ message.publish|date:'Y-m-d H:i:s' }}</h5>
+                        <h3>{{ message.title }}</h3> <br>
+                        <h5> {{ message.content }} </h5><!-- your content -->
+                    </font>
+                </div>
+                <br>
+                </tr>
+                {% endfor %}
+                {% else %}
+                <tr>
+                    <td colspan="4" content></td>
+                </tr>
+                {% endif %}
+                </tbody>
+            </table>
+            <br>
+
+            <div class="experience">
+                <div class="box-container">
+                    <div class="box">
+                        <h4 class="title" align="center"> Type your message </h4>
+                        <form action="/save" method="POST" novalidate="novalidate"> <!-- submit your comment  -->
+                            {% csrf_token %}
+                            <h3>
+                                <label> Username: </label> <input type="text" name="username"
+                                                                  placeholder="Your username"/> <br> <br/>
+                                <label> Title: </label> <input type="text" name="title" placeholder="title"/> <br/>
+                                <br/>
+                                <label> Content: </label> <textarea name="content"
+                                                                    placeholder="Your comment"></textarea>
+                                <br/> <br/>
+                            </h3>
+                            <input class="btn btn-success" type="submit" value="Submit"/>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <a class="btn" href="/" rel="external nofollow"> Back </a>
+        </div>
+        <br><br><h5 align="center"> Copyright © 2020 - 2022 Shenzhen Zhenshun Technology Ltd. All Rights Reserved. </h5>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+
+{% load static %}
+{% load staticfiles %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href=" static/css/style.css ">      <!-- css file in the static/css/style.css -->
+
+    <style>
+            h5{text-transform: None;}
+            h4{text-transform: None;}
+            h3{text-transform: None;}
+            h2{text-transform: None;}
+            h1{text-transform: None;}
+            p{text-transform: None;}
+            .img-obj{ width: 100%; height: auto;max-width: 100%; display: block; }
+
+    </style>
+
+</head>
+
+<body>
+
+
+<div class="container">
+    <div class="profile">
+        <img src="static/pic.png" alt="">        <!-- my face pic -->
+        <h3>Charming Cai</h3>                   <!-- my name -->
+        <p>Electrical & Computer engineer</p>    <!-- my def -->
+        <div class="share">                     <!-- contact icon-->
+            <p>
+                <a href="https://www.facebook.com/profile.php?id=100081274508718" class="fab fa-facebook-f"></a>
+                <!-- fb ok -->
+                <a href="https://line.me/ti/p/pJETfbBIMg" class="fab fa-line"></a> <!-- line ok -->
+                <a href="/weixin" class="fab fa-weixin"></a>
+            </p>
+            <a href="https://www.instagram.com/charmingcai9/" class="fab fa-instagram"></a>  <!-- ins ok -->
+            <a href="/LinkedIn" class="fab fa-linkedin"></a> <!-- link ok -->
+            <a href="https://www.youtube.com/channel/UC8-B4Lkx0oUzU2lOs9HLRdQ" class="fab fa-youtube"></a>
+            <!-- youtube ok -->
+            <a href="https://github.com/Charming-usyd" class="fab fa-git"></a>    <!-- github ok -->
+        </div>
+        <div class="buttons">
+            <a class="btn" href="static/files/cv.pdf" download="cv.pdf"> Download cv</a>
+            <a class="btn" href="/comment" rel="external nofollow"> Comment </a>
+            <a class="btn" href="/" rel="external nofollow"> My Resume </a>
+            <a class="btn" href="/project" rel="external nofollow"> My Project </a>
+        </div>
+    </div>
+
+
+    <div class="information">
+        <div class="about">
+            <h5 class="title">Certificate</h5>
+        </div>
+        <div class="experience">
+            <div class="box-container">
+                <div class="box" align="center">
+                    <h2><span>2020 - 2022</span></h2>
+                    <h2>Patents</h2> <br>
+                    <h2>
+                        <a id="power_loc" name="power_loc">           <!-- 嵌入锚点 锚点为高精度电源-->
+                            <img class="img-obj" src="static/award/0.png" height="560" alt="" align="centre"> </a> <br>
+                        <h4> A high-precision power supply. </h4> <br>
+                        <img class="img-obj" src="static/award/1.png" height="560" alt="" align="centre"> <br>
+                        <h4> A Card Reader Control Cabinet for Electrical Applications. </h4> <br>
+                        <a id="lamp_loc_patent" name="lamp_loc_patent">              <!-- 嵌入锚点 锚点为智能台灯-->
+                            <img class="img-obj" src="static/award/2.png" height="560" alt=""> </a> <br>
+                        <h4> An integrated rechargeable table lamp. </h4> <br>
+                        <img class="img-obj" src="static/award/3.png" height="560" alt=""> <br>
+                        <h4> A fast charging port for lithium batteries. </h4> <br>
+                        <a id="3D_loc" name="3D_loc">                  <!-- 嵌入锚点 锚点为3D打印机-->
+                            <img class="img-obj" src="static/award/4.png" height="560" alt=""> </a> <br>
+                        <h4> 3D printer monitoring system based on embedded Linux operating system </h4> <br>
+                    </h2>
+                </div>
+            </div>
+            <div class="box-container">
+                <div class="box" align="center">
+                    <h2><span>2020 - 2022</span></h2>
+                    <h2>Patents pending</h2> <br>
+                    <h2>
+                        <a id="" name="bathroom_loc_patent">                  <!-- 嵌入锚点 锚点为浴室专利-->
+                            <img class="img-obj" src="static/award/5.png" height="560" alt=""> </a>
+                        <br>
+                        <img class="img-obj" src="static/award/6.png" height="560" alt="">
+                        <h4> An intelligent bathroom for the elderly </h4> <br>
+                    </h2>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="about">
+            <h5 class="title">Awards</h5>
+        </div>
+        <div class="experience">
+            <div class="box-container">
+                <div class="box" align="center">
+                    <h2><span>2019 - 2022</span></h2>
+                    <h2>Academic competitions</h2> <br>
+                    <h2>
+                        <img class="img-obj" src="static/award/7.png" height="560" alt="" align="centre"> <br>
+                        <h4>Mathematical Modelling Competition.</h4> <br>
+                        <a id="bathroom_loc" name="bathroom_loc_award">  <!-- 嵌入锚点 锚点为浴室-->
+                            <img class="img-obj" src="static/award/8.png" height="560" alt=""> </a> <br>
+                        <h4>Provincial Award in Mechanical Innovation Design Competition.</h4> <br>
+                        <img class="img-obj" src="static/award/11.png" height="360" alt=""> <br>
+                        <h4>Provincial(school) Award in Mechanical Innovation Design Competition.</h4> <br>
+                        <a id="lamp_loc_award" name="lamp_loc_award">  <!-- 嵌入锚点 锚点为台灯-->
+                            <img class="img-obj" src="static/award/9.png" height="560" alt=""> </a> <br>
+                        <h4>National First Prize in 3D Power Competition in 2020.</h4> <br>
+                        <a id="vehicle_loc_award" name="vehicle_loc_award">  <!-- 嵌入锚点 锚点为热能车-->
+                            <img class="img-obj" src="static/award/9.1.png" height="560" alt=""> </a> <br>
+                        <h4>National Second Prize in 3D Power Competition in 2021.</h4> <br>
+                        <a id="window_loc" name="window_loc">  <!-- 嵌入锚点 锚点为百叶窗-->
+                            <img class="img-obj" src="static/award/10.png" height="360" alt=""> </a> <br>
+                        <h4>“Internet+” Innovation and Entrepreneurship Competition School Gold Award and Provincial
+                            Bronze Award</h4> <br>
+                        <a id="Robot_loc" name="Robot_loc">  <!-- 嵌入锚点 锚点为搬运机器人-->
+                            <img class="img-obj" src="static/award/12.png" height="360" alt=""> </a> <br>
+                        <h4>Provincial Awards for Engineering Training</h4> <br>
+                    </h2>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="about">
+            <h5 class="title">Other Awards</h5>
+        </div>
+        <div class="experience">
+            <div class="box-container">
+                <div class="box" align="center">
+                    <h2><span>2020 - 2022</span></h2>
+                    <h2>Academic competitions</h2> <br>
+                    <h2>
+                        <img class="img-obj" src="static/award/14.png" height="360" alt=""> <br>
+                        <img class="img-obj" src="static/award/15.png" height="360" alt=""> <br>
+                        <img class="img-obj" src="static/award/16.png" height="360" alt=""> <br>
+                        <h4> National College Students energy saving and emission reduction contest </h4> <br>
+                        <h2><span>2020 - 2021</span></h2>
+                        <h2> Sports competitions</h2> <br>
+                        <img class="img-obj" src="static/award/19.jpg" height="360" alt=""> <br>
+                        <img class="img-obj" src="static/award/20.jpg" height="360" alt=""> <br>
+                        <h4> 2020 Hubei Province College Students Orienteering Race</h4> <br>
+                        <img class="img-obj" src="static/award/17.png" height="360" alt=""> <br>
+                        <img class="img-obj" src="static/award/18.jpg" height="360" alt=""> <br>
+                        <h4> 2021 Hubei Province College Students Orienteering Race</h4> <br>
+                    </h2>
+                    <h3>Continuous updates...</h3>
+                </div>
+            </div>
+            <br>
+        </div>
+
+
+        <div class="contact">
+            <h3 class="title">Contact Info</h3>
+            <div class="box-container">
+                <div class="box">
+                    <i class="fas fa-map"></i>
+                    <div class="info">
+                        <h3>My Address</h3>
+                        <p>shenzhen, china - 518064</p>
+                        <p>sydney, australia - None</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <i class="fas fa-phone"></i>
+                    <div class="info">
+                        <h3>My Number</h3>
+                        <p>+86-158-7112-1977</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <i class="fas fa-envelope"></i>
+                    <div class="info">
+                        <h3>My Email</h3>
+                        <p>joplinkidds@gmail.com</p>
+                        <p>caizongmm0502@163.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br><h5 align="center"> Copyright © 2020 - 2022 Shenzhen Zhenshun Technology Ltd. All Rights
+        Reserved. </h5>
+    </div>
+</div>
+</div>
+
+</body>
+</html>
