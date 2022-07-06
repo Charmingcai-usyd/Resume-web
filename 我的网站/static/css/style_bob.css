@@ -1,0 +1,36 @@
+:root{
+  --pink_bob:#2980b9;
+  --blue_bob:#ff94f3;
+}
+
+.comment{
+    padding:30px 20px;
+    border:7px
+    solid var(--pink_bob);
+    margin-left:70px;
+    margin-right:70px;
+    background:var(--blue_bob);
+    position:relative;
+}
+.comment span{
+    width:0;
+    height:0;
+    font-size:0;
+    overflow:hidden;
+    position:absolute;
+}
+
+.comment span.bot{
+    border-width:20px;
+    border-style:solid dashed dashed;
+    border-color:var(--pink_bob) transparent transparent;
+    left:80px;
+    bottom:-40px;
+}
+.comment span.top{
+    border-width:20px;
+    border-style:solid dashed dashed;
+    border-color:var(--blue_bob) transparent transparent;
+    left:80px;
+    bottom:-33px;
+}
